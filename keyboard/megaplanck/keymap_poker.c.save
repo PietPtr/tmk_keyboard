@@ -1,0 +1,33 @@
+#include "keymap_common.h"
+
+const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+    /* qwerty */
+    KEYMAP(FN3,  FN7,  FN11, ESC,     Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, BSPC,  FN1,  FN0, WH_U, \
+           FN4,  FN8,  FN12, TAB,     A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN,  ENT,  FN2, RSFT, WH_D, \
+           FN5,  FN9,  FN13, LSFT,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH, RSFT, RCTL,   UP, RALT, \
+           FN6, FN10,  FN14, SPC,  LCTL, LALT, LGUI,  FN2,  DEL,  SPC,  FN1, MINS,  EQL, LBRC, RBRC, LEFT, DOWN, RGHT),
+
+    /* dvorak */
+    
+
+    /* FN1 (up) */
+
+
+    /* FN2 (down) */
+
+KEYMAP(FN3,  FN7,  FN11, ESC,     Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, BSPC,  FN1,  FN0, WH_U, \
+           FN4,  FN8,  FN12, TAB,     A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN,  ENT,  FN2, RSFT, WH_D, \
+           FN5,  FN9,  FN13, LSFT,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH, RSFT, RCTL,   UP, RALT, \
+KEYMAP(FN3,  FN7,  FN11, ESC,     Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, BSPC,  FN1,  FN0, WH_U, \
+           FN4,  FN8,  FN12, TAB,     A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN,  ENT,  FN2, RSFT, WH_D, \
+           FN5,  FN9,  FN13, LSFT,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH, RSFT, RCTL,   UP, RALT, \
+           FN6, FN10,  FN14, SPC,  LCTL, LALT, LGUI,  FN2,  DEL,  SPC,  FN1, MINS,  EQL, LBRC, RBRC, LEFT, DOWN, RGHT),
+           FN6, FN10,  FN14, SPC,  LCTL, LALT, LGUI,  FN2,  DEL,  SPC,  FN1, MINS,  EQL, LBRC, RBRC, LEFT, DOWN, RGHT),
+
+};
+
+const uint16_t PROGMEM fn_actions[] = {
+    [0] = ACTION_LAYER_MOMENTARY(1), //dvorak
+    [1] = ACTION_LAYER_MOMENTARY(2), //fn up
+    [2] = ACTION_LAYER_MOMENTARY(3), //fn down
+};
